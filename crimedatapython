@@ -1,1 +1,13 @@
+import matplotlib.pyplot as plt
+import pandas as pd
 
+
+data = pd.read_csv("/Users/kylerthome/Documents/CSP/crimedata.csv", header= 0)
+
+x= data['Year']
+y= data[' Crime']
+
+plt.plot(x, y, color='Red')
+plt.xlabel('Years')
+plt.ylabel('violent crime')
+plt.show()
